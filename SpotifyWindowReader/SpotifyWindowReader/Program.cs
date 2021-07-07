@@ -19,7 +19,8 @@ namespace SpotifyWindowReader
                 return "Spotify is not running!";
             }
             // Change "Spotify Premium" to "Spotify" if you are not using premium version.
-            if (string.Equals(proc.MainWindowTitle, "Spotify Premium", StringComparison.InvariantCultureIgnoreCase) || string.Equals(proc.MainWindowTitle, "Spotify", StringComparison.InvariantCultureIgnoreCase))
+            if (string.Equals(proc.MainWindowTitle, "Spotify Premium", StringComparison.InvariantCultureIgnoreCase) ||
+                string.Equals(proc.MainWindowTitle, "Spotify", StringComparison.InvariantCultureIgnoreCase))
             {
                 return "Music paused.";
             }
