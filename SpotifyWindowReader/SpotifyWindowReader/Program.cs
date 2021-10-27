@@ -28,8 +28,6 @@ namespace SpotifyWindowReader
                 return proc.MainWindowTitle;
             }
         }
-
-
     }
 
     class Program
@@ -61,10 +59,6 @@ namespace SpotifyWindowReader
                     continue;
                 }
                 
-                //songTitle = songTitle.Replace("•", string.Empty); // Looks for the system bell character "•"
-
-               
-
                 // Write spotify title to file so it can be picked up by OBS
                 try
                 {
@@ -80,8 +74,6 @@ namespace SpotifyWindowReader
                     Console.WriteLine("\n\nPress any key to close the application.");
 
                     break;
-
-                    Console.ReadKey();
                 }
             }
         }
